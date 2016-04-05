@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>
+			
+		function load(toLoad){
+			var dataRequester = new XMLHttpRequest()
+			dataRequester.onreadystatechange = function() {
+			  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
+			  	console.log("yenrab")
+			    document.getElementById("barneyMain").innerHTML = dataRequester.responseText;
+			  }
+			}
+
+			dataRequester.open("GET", toLoad+".html", true);
+			dataRequester.send();
+		}
+	</script>
+</head>
+
+<body onload="load('261Description')">
+<div id="barneyWrap">
+    <div id="barneyHeader"> 
+    	<div id="tagLine"> Software is Everywhere</div>
+  		<div id="className">CIT-261</div>
+    </div>
+    <div id="barneyBody">
+        <div id="barneySidebar"> 
+        	<table>
+        		<tr><td><figure><img onclick="load('261Description')" src="class.png"/><figcaption>course</figcaption></figure></td></tr>
+        		<tr><td><img onclick="load('syllabus')" src="syllabus.png"/><figcaption>syllabus</figcaption></td></tr>
+        		<tr><td><img onclick="load('how_much_time')" src="time-commitment.png"/><figcaption>time commitment</figcaption></td></tr>
+        		<tr><td><img onclick="load('dealing_with_assessments')" src="success.png"/><figcaption>being successful</figcaption></td></tr>
+        		<tr><td><img onclick="load('Ophelia')" src="ophelia.png"/><figcaption>ophelia syndrome</figcaption></td></tr>
+        		<tr><td><img onclick="load('261_links')" src="technology-square.png"/><figcaption>tech helps</figcaption></td></tr>
+                <tr><td><img onclick="load('261_resource_links')" src="Tools.png"/><figcaption>tool helps</figcaption></td></tr>
+        	</table>
+        </div>
+        <div id="scrollContainer"> 
+        	<div id="barneyMain">MAIN CONTENT</div>    
+        </div>    
+    </div>
+</div>
+</body>
+</html>
