@@ -3,19 +3,21 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/main.css">
 	<script>
 			
-		function load(toLoad){
+		function load(toLoad, isRemoteRequst){
 			var dataRequester = new XMLHttpRequest()
 			dataRequester.onreadystatechange = function() {
 			  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
-			  	console.log("yenrab")
 			    document.getElementById("barneyMain").innerHTML = dataRequester.responseText;
 			  }
 			}
-
-			dataRequester.open("GET", toLoad+".html", true);
+            var prefix = ""
+            if(isRemoteRequst){
+                prefix = "https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/"
+            }
+			dataRequester.open("GET", prefix+toLoad+".html", true);
 			dataRequester.send();
 		}
 	</script>
@@ -30,13 +32,13 @@
     <div id="barneyBody">
         <div id="barneySidebar"> 
         	<table>
-        		<tr><td><figure><img onclick="load('261Description')" src="class.png"/><figcaption>course</figcaption></figure></td></tr>
-        		<tr><td><img onclick="load('syllabus')" src="syllabus.png"/><figcaption>syllabus</figcaption></td></tr>
-        		<tr><td><img onclick="load('how_much_time')" src="time-commitment.png"/><figcaption>time commitment</figcaption></td></tr>
-        		<tr><td><img onclick="load('dealing_with_assessments')" src="success.png"/><figcaption>being successful</figcaption></td></tr>
-        		<tr><td><img onclick="load('Ophelia')" src="ophelia.png"/><figcaption>ophelia syndrome</figcaption></td></tr>
-        		<tr><td><img onclick="load('261_links')" src="technology-square.png"/><figcaption>tech helps</figcaption></td></tr>
-                <tr><td><img onclick="load('261_resource_links')" src="Tools.png"/><figcaption>tool helps</figcaption></td></tr>
+        		<tr><td><figure><img onclick="load('261Description')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/class.png"/><figcaption>course</figcaption></figure></td></tr>
+        		<tr><td><img onclick="load('syllabus')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/syllabus.png"/><figcaption>syllabus</figcaption></td></tr>
+        		<tr><td><img onclick="load('how_much_time', 'remote')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/time-commitment.png"/><figcaption>time commitment</figcaption></td></tr>
+        		<tr><td><img onclick="load('dealing_with_assessments', 'remote')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/success.png"/><figcaption>being successful</figcaption></td></tr>
+        		<tr><td><img onclick="load('Ophelia', 'remote')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/ophelia.png"/><figcaption>ophelia syndrome</figcaption></td></tr>
+        		<tr><td><img onclick="load('261_links')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/technology-square.png"/><figcaption>tech helps</figcaption></td></tr>
+                <tr><td><img onclick="load('261_resource_links')" src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/Tools.png"/><figcaption>tool helps</figcaption></td></tr>
         	</table>
         </div>
         <div id="scrollContainer"> 
