@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Group Loop</title>
+  <script>
+	function checkNumbers(){
+
+		var someNumbers = [25, 11, -2, 14, "what?? This isn't a number!", -1, -10]
+		for(var i = 0; i < 7; i++){
+			var numberAsText = someNumbers[i]
+	  		var aNumber = parseInt(numberAsText)
+	  		if(numberAsText != "" && !isNaN(aNumber)){
+		  		var remainder = Math.abs(aNumber % 2)
+		  		if(aNumber != 0 && remainder == 0){
+				document.getElementById("result_display").innerHTML = "<p>"+
+					aNumber + " is even.</p>"
+				}
+		 		else if(aNumber != 0 && remainder == 1){
+					document.getElementById("result_display").innerHTML = "<p>"+ 
+						aNumber + " is odd.</p>"
+				}
+		 		else{
+					document.getElementById("result_display").innerHTML = "<p>"+ 
+						"0 is neither even nor odd.</p>"
+				}
+			}
+			else{
+				document.getElementById("result_display").innerHTML = "<p>Oops. Found something that wasn't a number in position " + i + ".</p>"
+			}
+		}
+  	}
+  </script>
+
+  <style>
+  	body{
+  		background-color: LightGrey;
+  	}
+  	input{
+		border:none; 
+		border-radius:5px; 
+		box-shadow:0px 0px 5px #666666 inset; 
+		height:25px;
+		width:200px; 
+		text-indent:5px; 
+	} 
+	input:focus { 
+		outline:none;
+  	}
+  </style>
+</head>
+
+<body>
+	<h1>Even or Odd???</h1>
+	<button onclick="checkNumbers()">Check It!</button>
+	<div id="result_display"></div>
+</body>
+</html>
