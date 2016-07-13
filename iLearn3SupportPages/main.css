@@ -1,0 +1,239 @@
+body{
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+figcaption{
+	font-size: x-small;
+}
+.navigationFigure{
+	width:45px;
+	height: 50px;
+}
+.course_map_header{
+  font-weight: bold;
+  font-size: 64px;
+  color:white;
+  background: linear-gradient(to bottom, rgb(68, 119, 198) 0%,#3f4c6b 100%);
+}
+.activity_table{
+	margin-right:30px;
+    border-collapse: collapse;
+    border: none;
+}
+.activity_table_header{
+  color:white;
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgb(182,202,227) 0%,rgb(61,98,143) 100%);
+}
+.activity_table td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.invisible{
+	visibility: hidden;
+}
+.activity_table_footer{
+  font-weight: bold;
+}
+.student_hours{
+  background: linear-gradient(to bottom, rgb(215,226,240) 0%,rgb(151,180,215) 100%);
+}
+.instructor_hours{
+  background: linear-gradient(to bottom, rgb(215,226,240) 0%,rgb(151,180,215) 100%);
+}
+.activity_table_footer_cell{
+  background: linear-gradient(to bottom, rgb(215,226,240) 0%,rgb(151,180,215) 100%);
+}
+.course_map{
+	padding-left:10px;
+	font-size:13px;
+}
+.borderlessTable{
+	border:none;
+}
+.bold{
+	font-weight:bold;
+}
+.borderlessTable td{
+	border:none;
+}
+
+.titleLeft{
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+	font-size: 250%;
+	font-weight: normal;
+	margin: 10px 0 20px;
+	padding: 0;
+	color: #111;
+}
+.centered{
+	text-align: center;
+}
+.supportMaterialsTable{
+	margin: .5em 0 1em;
+	border-bottom: 3px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	margin: 0px;
+}
+.bookTitle{
+	font-style:italic;
+	font-weight:bold;
+}
+.preparednessCells{
+	color: white; 
+	background-color: #646464;
+}
+
+#thinkList{
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+	font-size: 125%;
+	font-weight:bold;
+}
+#tagLine{
+	color: rgb(255, 255, 255);
+	display: block;
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	height: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 0px;
+	padding-top: 20px;
+	text-shadow: rgb(34, 34, 34) 0px -1px 1px;
+	background-color: rgb(200,200,200);
+	background: black;
+}
+#className{
+	text-align:center; 
+	height:60px;
+	background: linear-gradient(grey,black);
+}
+#references{
+	position: fixed;
+	font-size: 6px;
+	width:250px;
+	float:none;
+	bottom:0px;
+}
+#barneyHeader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right: 0px;
+	background-color: black;
+	color: rgb(255, 255, 255);
+	font-size:50px; 
+	z-index: 1;
+}
+
+#barneyFooter { 
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+	color:white;
+	background: linear-gradient(black,grey);
+}
+#barneyFooter > *{
+	float:left;
+	margin: 10px;
+}
+#barneyMain{
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+	font-size: 1vw;
+	font-style: normal;
+	padding-left: 10px;
+	margin-right:100px;
+	position: fixed;
+	top:90px; 
+	bottom: 120px;
+	width:91%;
+	overflow: scroll;
+}
+.boxed_weeks {
+}
+.weeks_info{
+	width:25%;
+	height: 100%;
+	font-weight: bold;
+	float: left;
+	padding-bottom: 75px;
+}
+.weeks_info > section{
+	width:70%;
+	border:black solid 1px;
+  	border-radius: 5px;
+	margin: auto;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#weeks{
+	width:70%;
+	height: 100%;
+	position:relative;
+	float:right;
+	border-radius: 5px;
+	padding:5px;
+  	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+#weeks > section{
+  	font-size: 2vw;
+	font-weight: bold;
+	color:rgb(220,220,220);
+	border:black solid 1px;
+  	border-radius: 5px;
+  	width:100%;
+  	text-align: center;
+  	padding-top:10px;
+  	padding-bottom: 10px;
+}
+.week_1{
+	width: 70%;
+	position: relative;
+	right: 0px;
+}
+.week_14{
+	width:40%;
+}
+.class_explore{
+	background-color:rgb(12,52,0);
+}
+.class_exploration_text{
+	color:rgb(12,52,0);
+}
+.personal_explore{
+	background-color:rgb(204,102,0);
+}
+.personal_exploration_text{
+	color:rgb(204,102,0);
+}
+.team_challenge{
+	background-color:rgb(41,0,153);
+}
+.team_challenge_text{
+	color:rgb(41,0,153);
+}
+.weeks_info >section> p{
+  	font-size: 1vw;
+}
+#key > p{
+	text-shadow: 0px 0px 1px black;
+}
+h1{
+  	font-size: 3vw;
+}
+h1 > span{
+	font-size: 2vw;
+}
+
+body{
+  	font-size: 1.5vw;
+}
+h3{
+	text-shadow: 0px 0px 1px black;
+}
