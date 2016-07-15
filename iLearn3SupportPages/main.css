@@ -1,8 +1,29 @@
+* {
+	box-sizing:border-box;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
 body{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+    height: 100%;
+    overflow: auto;
+  	font-size: 1.5vw;
 }
 figcaption{
 	font-size: x-small;
+}
+
+h1{
+  	font-size: 4vmax;
+}
+h1 > span{
+	font-size: 2vw;
+}
+.shadows{
+	text-shadow: 0px 0px 1px black;
 }
 .navigationFigure{
 	width:45px;
@@ -92,25 +113,67 @@ figcaption{
 	color: rgb(255, 255, 255);
 	display: block;
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 2vh;
 	font-style: normal;
-	height: 15px;
+	height: 4vh;
+	width: 100%;
 	margin-bottom: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	padding-bottom: 0px;
-	padding-left: 20px;
+	padding-left: 1vw;
 	padding-right: 0px;
-	padding-top: 20px;
+	padding-top: 0px;
 	text-shadow: rgb(34, 34, 34) 0px -1px 1px;
 	background-color: rgb(200,200,200);
 	background: black;
 }
 #className{
-	text-align:center; 
-	height:60px;
+	text-align:center;
+	font-size: 6vh;
+	padding-top: 2vh;
+	height:11vh;
 	background: linear-gradient(grey,black);
+}
+#barneyHeader {
+	position: fixed;
+	top:0px;
+	left:0px;
+	right: 0px;
+	height:11vh;
+	background-color: black;
+	color: rgb(255, 255, 255); 
+	width:100%;
+    min-width: 360px;
+}
+#barneyMain{
+	font-size: 1.55vmax;
+	padding-right:10px;
+	padding-top: 5px;
+	position: fixed;
+	top:15vh; 
+	bottom: 100px;
+	width:100%;
+    min-width: 360px;
+	overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
+}
+#barneyFooter { 
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    min-width: 360px;
+	color:white;
+	background: linear-gradient(black,grey);
+}
+#barneyFooter>*{
+	float:left;
+	margin: 2vw;
+	margin-bottom: .1vh;
+	margin-top: 1vh;
 }
 #references{
 	position: fixed;
@@ -118,44 +181,6 @@ figcaption{
 	width:250px;
 	float:none;
 	bottom:0px;
-}
-#barneyHeader {
-	position:fixed;
-	top:0px;
-	left:0px;
-	right: 0px;
-	background-color: black;
-	color: rgb(255, 255, 255);
-	font-size:50px; 
-	z-index: 1;
-}
-
-#barneyFooter { 
-	position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 120px;
-    width: 100%;
-	color:white;
-	background: linear-gradient(black,grey);
-}
-#barneyFooter > *{
-	float:left;
-	margin: 10px;
-}
-#barneyMain{
-	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
-	font-size: 1vw;
-	font-style: normal;
-	padding-left: 10px;
-	margin-right:100px;
-	position: fixed;
-	top:90px; 
-	bottom: 120px;
-	width:91%;
-	overflow: scroll;
-}
-.boxed_weeks {
 }
 .weeks_info{
 	width:25%;
@@ -219,21 +244,8 @@ figcaption{
 	color:rgb(41,0,153);
 }
 .weeks_info >section> p{
-  	font-size: 1vw;
+  	font-size: 1vmax;
 }
 #key > p{
-	text-shadow: 0px 0px 1px black;
-}
-h1{
-  	font-size: 3vw;
-}
-h1 > span{
-	font-size: 2vw;
-}
-
-body{
-  	font-size: 1.5vw;
-}
-h3{
 	text-shadow: 0px 0px 1px black;
 }
