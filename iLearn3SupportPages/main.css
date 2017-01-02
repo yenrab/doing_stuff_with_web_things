@@ -1,3 +1,4 @@
+
 * {
 	box-sizing:border-box;
 }
@@ -102,6 +103,29 @@ h1 > span{
 .preparednessCells{
 	color: white; 
 	background-color: #646464;
+}
+
+#theScheduleDisplay {
+	border: 1px solid black;
+	table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#theScheduleDisplay tr:nth-child(even) {
+	background: #CCC;
+}
+#theScheduleDisplay tr:nth-child(odd) {
+	background: #FFF;
+}
+
+#theScheduleDisplay th{
+	background: black;
+	color: white;
+	height: 2em;
+}
+#theScheduleDisplay tr:nth-child(even) {
+	background: #CCC;
 }
 
 #thinkList{
