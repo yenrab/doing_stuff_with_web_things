@@ -23,9 +23,6 @@ h1{
 h1 > span{
 	font-size: 2vw;
 }
-iframe{
-	width: 150px;
-}
 .shadows{
 	text-shadow: 0px 0px 1px black;
 }
